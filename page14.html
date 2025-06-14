@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gumroad Features - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 14 Specific Styles */
+        .feature-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border-left: 4px solid #6e45e2;
+            position: relative;
+            overflow: hidden;
+        }
+        .feature-card h3 {
+            margin-top: 0;
+            color: #6e45e2;
+            display: flex;
+            align-items: center;
+        }
+        .feature-card h3 i {
+            margin-right: 15px;
+            font-size: 1.5em;
+            color: #ff7e5f;
+        }
+        .feature-card .access {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: #e0e0ff;
+            color: #6e45e2;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .feature-screenshot {
+            width: 100%;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            margin: 15px 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .feature-steps {
+            background: #f8f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .feature-steps ol {
+            padding-left: 25px;
+        }
+        .feature-steps li {
+            margin-bottom: 10px;
+        }
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 25px 0;
+        }
+        .feature-badge {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+            border: 1px solid #e0e0ff;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .feature-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(110,69,226,0.1);
+        }
+        .feature-badge i {
+            font-size: 2em;
+            color: #6e45e2;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .feature-badge h4 {
+            margin: 5px 0;
+        }
+        .hidden-gem {
+            position: relative;
+            padding-left: 50px;
+            margin: 30px 0;
+        }
+        .hidden-gem:before {
+            content: "💎";
+            position: absolute;
+            left: 0;
+            top: 0;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 14 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>Gumroad Feature Deep Dive</h2>
+            <p>Master these powerful (but often overlooked) platform features to boost your sales.</p>
+            
+            <div class="feature-card">
+                <h3><i class="fas fa-tag"></i> Post-Purchase Offers</h3>
+                <span class="access">Available to all</span>
+                <p>Automatically show complementary products after purchase, when customers are most likely to buy again.</p>
+                
+                <div class="feature-steps">
+                    <h4>Implementation Steps:</h4>
+                    <ol>
+                        <li>Go to Product → Settings → Post-Purchase Offer</li>
+                        <li>Select a relevant product to recommend</li>
+                        <li>Write compelling offer text (focus on benefits)</li>
+                        <li>Optionally add a discount code</li>
+                    </ol>
+                </div>
+                
+                <div class="hidden-gem">
+                    <strong>Pro Tip:</strong> Offer a "done-for-you" upgrade to your DIY product. Example: "Loved the course? Get the $500 implementation audit."
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <h3><i class="fas fa-users"></i> Customer Segmentation</h3>
+                <span class="access">Available to all</span>
+                <p>Tag and filter customers to create targeted email campaigns.</p>
+                
+                <div class="feature-steps">
+                    <h4>Powerful Segments to Create:</h4>
+                    <ul>
+                        <li>Customers who bought Product A but not Product B</li>
+                        <li>High-ticket buyers ($500+)</li>
+                        <li>Repeat customers (2+ purchases)</li>
+                        <li>Customers who haven't bought in 90 days</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <h3><i class="fas fa-percentage"></i> Pay What You Want</h3>
+                <span class="access">Available to all</span>
+                <p>Let customers choose their price while setting a minimum amount.</p>
+                
+                <img src="https://i.ibb.co/0jq3Yy8/pwyw.png" alt="Pay What You Want example" class="feature-screenshot">
+                
+                <p><strong>Best uses:</strong></p>
+                <ul>
+                    <li>New product launches (build initial audience)</li>
+                    <li>Older products (breathe new life into them)</li>
+                    <li>Lead magnets (collect emails from free downloads)</li>
+                </ul>
+            </div>
+            
+            <h3>Underutilized Features Worth Exploring</h3>
+            <div class="feature-grid">
+                <div class="feature-badge">
+                    <i class="fas fa-gift"></i>
+                    <h4>Digital Gift Cards</h4>
+                    <p>Let fans gift your products to others</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h4>Scheduled Releases</h4>
+                    <p>Build anticipation for new products</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-file-invoice-dollar"></i>
+                    <h4>VAT Invoicing</h4>
+                    <p>Automated tax compliance</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-link"></i>
+                    <h4>Custom Domains</h4>
+                    <p>Branded checkout experience</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-user-tag"></i>
+                    <h4>Affiliate Program</h4>
+                    <p>10-30% commissions for promoters</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-plug"></i>
+                    <h4>Zapier Integration</h4>
+                    <p>Connect Gumroad to 3,000+ apps</p>
+                </div>
+            </div>
+            
+            <div class="checklist">
+                <h3>Feature Implementation Checklist:</h3>
+                <ul>
+                    <li>Have you set up post-purchase offers for all products?</li>
+                    <li>Are you using customer segments for targeted emails?</li>
+                    <li>Have you tested "Pay What You Want" on at least one product?</li>
+                    <li>Are you utilizing the affiliate program?</li>
+                    <li>Have you explored Zapier automations?</li>
+                </ul>
+            </div>
+            
+            <div class="hidden-gem">
+                <strong>Hidden Gem:</strong> Use Gumroad's API to create custom dashboards that track exactly the metrics you care about most.
+            </div>
+            
+            <blockquote style="border-color: #ff7e5f;">
+                "Most creators use only 20% of Gumroad's features. Mastering these tools can double your revenue without needing more traffic."
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page13.html" class="nav-button prev-button">← Product Stacking</a>
+            <a href="page15.html" class="nav-button next-button">Next: Content Repurposing →</a>
+        </footer>
+    </div>
+</body>
+</html>
