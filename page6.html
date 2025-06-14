@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Page Design - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 6 Specific Styles */
+        .salespage-section {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 25px 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid #6e45e2;
+        }
+        .component-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .component-card {
+            background: #f9f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #e0e0ff;
+        }
+        .component-card h4 {
+            margin-top: 0;
+            color: #6e45e2;
+            display: flex;
+            align-items: center;
+        }
+        .component-card h4 i {
+            margin-right: 10px;
+            color: #ff7e5f;
+        }
+        .example-box {
+            background: #f0f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            font-style: italic;
+            position: relative;
+        }
+        .example-box:before {
+            content: """;
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            font-size: 2em;
+            color: rgba(110, 69, 226, 0.2);
+        }
+        .formula-badge {
+            display: inline-block;
+            background: #6e45e2;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+        .checklist-compact li {
+            margin-bottom: 8px;
+            padding-left: 25px;
+        }
+        .checklist-compact li:before {
+            content: "▹";
+            position: absolute;
+            left: 10px;
+            color: #6e45e2;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 6 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>High-Converting Sales Page Design</h2>
+            <p>Craft a Gumroad sales page that converts browsers into buyers with these proven elements.</p>
+            
+            <div class="salespage-section">
+                <h3>The Anatomy of a High-Performing Sales Page</h3>
+                <div class="component-grid">
+                    <div class="component-card">
+                        <h4><i class="fas fa-heading"></i> Headline</h4>
+                        <p>Your most important element - should immediately communicate the transformation.</p>
+                        <div class="example-box">
+                            "From Beginner to Confident Artist in 30 Days (Even If You've Never Drawn Before)"
+                        </div>
+                        <p><strong>Formulas:</strong></p>
+                        <p><span class="formula-badge">1</span> [Result] in [Timeframe] (Even If [Objection])</p>
+                        <p><span class="formula-badge">2</span> The [Adjective] Guide to [Skill/Outcome]</p>
+                    </div>
+                    
+                    <div class="component-card">
+                        <h4><i class="fas fa-user"></i> Hero Image</h4>
+                        <p>Show either:</p>
+                        <ul class="checklist-compact">
+                            <li>The product visually</li>
+                            <li>You (the creator)</li>
+                            <li>The end result</li>
+                        </ul>
+                        <p><strong>Tip:</strong> Use authentic images over stock photos.</p>
+                    </div>
+                    
+                    <div class="component-card">
+                        <h4><i class="fas fa-bolt"></i> Benefits List</h4>
+                        <p>Focus on outcomes, not features:</p>
+                        <div class="example-box">
+                            "✓ Stop wasting time on trial-and-error<br>
+                            ✓ Get actionable steps you can implement today<br>
+                            ✓ Avoid common pitfalls most beginners make"
+                        </div>
+                        <p>Use icons and keep to 3-5 key benefits.</p>
+                    </div>
+                    
+                    <div class="component-card">
+                        <h4><i class="fas fa-play-circle"></i> Product Preview</h4>
+                        <p>Gumroad lets you add:</p>
+                        <ul class="checklist-compact">
+                            <li>Embedded video</li>
+                            <li>PDF preview</li>
+                            <li>Image gallery</li>
+                            <li>Free sample chapter</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="component-card">
+                        <h4><i class="fas fa-quote-left"></i> Social Proof</h4>
+                        <p>Leverage:</p>
+                        <ul class="checklist-compact">
+                            <li>Customer testimonials</li>
+                            <li>Case studies</li>
+                            <li>"X copies sold"</li>
+                            <li>Media mentions</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="component-card">
+                        <h4><i class="fas fa-shopping-cart"></i> Pricing Section</h4>
+                        <p>Best practices:</p>
+                        <ul class="checklist-compact">
+                            <li>Show value first ("$297 value")</li>
+                            <li>Highlight popular tier</li>
+                            <li>Offer payment plans</li>
+                            <li>Add guarantee badge</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="salespage-section">
+                <h3>Gumroad-Specific Optimization Tips</h3>
+                <ul class="checklist">
+                    <li><strong>Use the description field wisely</strong> - First 2 lines show in search results</li>
+                    <li><strong>Enable "Pay What You Want" for discovery</strong> - Especially for new products</li>
+                    <li><strong>Add tags strategically</strong> - Helps with Gumroad's internal search</li>
+                    <li><strong>Update your page regularly</strong> - Fresh content gets prioritized</li>
+                    <li><strong>Link to your other products</strong> - Cross-sell in the description</li>
+                </ul>
+                
+                <div class="example-box" style="margin-top:20px;">
+                    <strong>Pro Tip:</strong> Create a simple one-page website for your product (using Carrd or Canva) and link to your Gumroad for checkout. This gives you more design flexibility while still using Gumroad's payment processing.
+                </div>
+            </div>
+            
+            <blockquote style="border-color: #6e45e2;">
+                "Your sales page should answer three questions: 1) What is this? 2) Why do I need it? 3) Why should I buy it NOW?"
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page5.html" class="nav-button prev-button">← Pricing Strategies</a>
+            <a href="page7.html" class="nav-button next-button">Next: Email Marketing →</a>
+        </footer>
+    </div>
+</body>
+</html>
