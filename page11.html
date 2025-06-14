@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics & Optimization - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 11 Specific Styles */
+        .metric-card {
+            background: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid #6e45e2;
+            position: relative;
+            overflow: hidden;
+        }
+        .metric-card h3 {
+            margin-top: 0;
+            color: #6e45e2;
+            display: flex;
+            align-items: center;
+        }
+        .metric-card h3 i {
+            margin-right: 15px;
+            color: #ff7e5f;
+        }
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #6e45e2;
+            margin: 15px 0;
+        }
+        .improvement-tip {
+            background: #f0f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+            position: relative;
+            padding-left: 50px;
+        }
+        .improvement-tip:before {
+            content: "↑";
+            position: absolute;
+            left: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            background: #6e45e2;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        .data-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .data-point {
+            background: #f9f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e0e0ff;
+        }
+        .data-point h4 {
+            margin-top: 0;
+            color: #6e45e2;
+        }
+        .benchmark {
+            display: inline-block;
+            background: #e0e0ff;
+            color: #6e45e2;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .test-results {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .test-results th {
+            background: #6e45e2;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        .test-results td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .test-results tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .test-results .winner {
+            background: #f0f5ff;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 11 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>Analytics & Optimization</h2>
+            <p>Data-driven strategies to maximize your Gumroad performance and conversions.</p>
+            
+            <div class="metric-card">
+                <h3><i class="fas fa-chart-line"></i> Conversion Rate</h3>
+                <div class="metric-value">2.3%</div>
+                <p>The percentage of visitors who make a purchase</p>
+                
+                <div class="improvement-tip">
+                    <strong>Boost conversions by:</strong> Adding a product video (increases conversions by 20-80%) and more testimonials.
+                </div>
+                
+                <div class="benchmark">Gumroad Average: 1.5-3%</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3><i class="fas fa-wallet"></i> Average Order Value</h3>
+                <div class="metric-value">$47</div>
+                <p>The average amount spent per transaction</p>
+                
+                <div class="improvement-tip">
+                    <strong>Increase AOV by:</strong> Offering product bundles or post-purchase upsells (can increase revenue by 10-30%).
+                </div>
+                
+                <div class="benchmark">Gumroad Average: $29-75</div>
+            </div>
+            
+            <div class="metric-card">
+                <h3><i class="fas fa-redo"></i> Repeat Customer Rate</h3>
+                <div class="metric-value">15%</div>
+                <p>Percentage of customers who purchase again</p>
+                
+                <div class="improvement-tip">
+                    <strong>Boost retention by:</strong> Creating a customer email sequence with exclusive offers (can double repeat purchases).
+                </div>
+                
+                <div class="benchmark">Gumroad Average: 8-20%</div>
+            </div>
+            
+            <h3>Key Gumroad Metrics to Track</h3>
+            <div class="data-grid">
+                <div class="data-point">
+                    <h4>Traffic Sources</h4>
+                    <p>Where your buyers are coming from (email, social, direct, etc.)</p>
+                    <p><strong>Find in:</strong> Gumroad Analytics → Traffic Sources</p>
+                </div>
+                <div class="data-point">
+                    <h4>Refund Rate</h4>
+                    <p>Percentage of sales refunded (indicates product-market fit)</p>
+                    <p><strong>Goal:</strong> Below 5% for digital products</p>
+                </div>
+                <div class="data-point">
+                    <h4>Customer Lifetime Value</h4>
+                    <p>Total revenue from average customer over time</p>
+                    <p><strong>Calculate:</strong> Average order value × Repeat purchases</p>
+                </div>
+            </div>
+            
+            <h3>A/B Test Results That Matter</h3>
+            <table class="test-results">
+                <tr>
+                    <th>Element Tested</th>
+                    <th>Version A</th>
+                    <th>Version B</th>
+                    <th>Lift</th>
+                </tr>
+                <tr>
+                    <td>Headline</td>
+                    <td>"Learn Copywriting"</td>
+                    <td class="winner">"Write Copy That Sells"</td>
+                    <td>+22%</td>
+                </tr>
+                <tr>
+                    <td>Price Display</td>
+                    <td>"$97"</td>
+                    <td class="winner">"$97 (Value $297)"</td>
+                    <td>+15%</td>
+                </tr>
+                <tr>
+                    <td>Button Color</td>
+                    <td>Blue</td>
+                    <td class="winner">Orange (#FF7E5F)</td>
+                    <td>+8%</td>
+                </tr>
+                <tr>
+                    <td>Checkout Options</td>
+                    <td>One-Time Payment</td>
+                    <td class="winner">+ Payment Plan</td>
+                    <td>+31%</td>
+                </tr>
+            </table>
+            
+            <div class="checklist">
+                <h3>Monthly Optimization Checklist:</h3>
+                <ul>
+                    <li>Review Gumroad analytics for traffic and conversion trends</li>
+                    <li>Test one element of your sales page (headline, images, etc.)</li>
+                    <li>Analyze refunds for product improvement opportunities</li>
+                    <li>Email top customers for testimonials</li>
+                    <li>Update at least one product to trigger "Recently Updated"</li>
+                </ul>
+            </div>
+            
+            <blockquote style="border-color: #6e45e2;">
+                "What gets measured gets improved. Focus on optimizing one key metric each month for compound growth."
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page10.html" class="nav-button prev-button">← Scaling Your Business</a>
+            <a href="page12.html" class="nav-button next-button">Next: Community Building →</a>
+        </footer>
+    </div>
+</body>
+</html>
