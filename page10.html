@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scaling Your Business - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 10 Specific Styles */
+        .phase-container {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 30px 0;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.05);
+            position: relative;
+            overflow: hidden;
+            border-top: 5px solid #6e45e2;
+        }
+        .phase-container:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, rgba(110,69,226,0.1) 0%, rgba(255,255,255,0) 70%);
+        }
+        .phase-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .phase-number {
+            flex: 0 0 50px;
+            height: 50px;
+            background: #6e45e2;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+        .phase-title {
+            flex: 1;
+        }
+        .phase-title h3 {
+            margin: 0;
+            color: #6e45e2;
+        }
+        .phase-title p {
+            margin: 5px 0 0;
+            color: #666;
+        }
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .strategy-card {
+            background: #f9f9ff;
+            border-radius: 8px;
+            padding: 20px;
+            border: 1px solid #e0e0ff;
+            transition: all 0.3s ease;
+        }
+        .strategy-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(110,69,226,0.1);
+        }
+        .strategy-card h4 {
+            margin-top: 0;
+            color: #6e45e2;
+            display: flex;
+            align-items: center;
+        }
+        .strategy-card h4 i {
+            margin-right: 10px;
+            color: #ff7e5f;
+        }
+        .revenue-pyramid {
+            width: 100%;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .pyramid-tier {
+            display: inline-block;
+            margin-bottom: 5px;
+            padding: 15px;
+            color: white;
+            font-weight: bold;
+            width: 80%;
+        }
+        .pyramid-tier:nth-child(1) {
+            background: #6e45e2;
+            width: 30%;
+            border-radius: 5px 5px 0 0;
+        }
+        .pyramid-tier:nth-child(2) {
+            background: #8a63e8;
+            width: 50%;
+        }
+        .pyramid-tier:nth-child(3) {
+            background: #a881ef;
+            width: 70%;
+        }
+        .pyramid-tier:nth-child(4) {
+            background: #c5a0f5;
+            width: 90%;
+            border-radius: 0 0 5px 5px;
+        }
+        .automation-flow {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #88d3ce;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 10 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>Scaling Your Gumroad Business</h2>
+            <p>Advanced strategies to grow from solo creator to sustainable business.</p>
+            
+            <div class="stat-highlight" style="background:linear-gradient(135deg, #6e45e2 0%, #ff7e5f 100%);">
+                <h3>Top 1% of Gumroad Creators Earn 58% of All Revenue</h3>
+                <p>Scaling systems separate hobbyists from professional creators.</p>
+            </div>
+            
+            <h3>The 4 Phases of Scaling</h3>
+            
+            <div class="phase-container">
+                <div class="phase-header">
+                    <div class="phase-number">1</div>
+                    <div class="phase-title">
+                        <h3>Productize</h3>
+                        <p>Turn your knowledge into sellable products</p>
+                    </div>
+                </div>
+                <div class="strategy-grid">
+                    <div class="strategy-card">
+                        <h4><i class="fas fa-box-open"></i> Product Suite</h4>
+                        <p>Develop 3-5 complementary products at different price points ($29, $97, $297+)</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4><i class="fas fa-sync-alt"></i> Evergreen Updates</h4>
+                        <p>Refresh products quarterly to maintain value and trigger Gumroad's "Recently Updated" visibility</p>
+                    </div>
+                    <div class="strategy-card">
+                        <h4><i class="fas fa-cubes"></i> Bundle Strategy</h4>
+                        <p>Combine products at a discount (3 for price of 2) to increase average order value</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="phase-container">
+                <div class="phase-header">
+                    <div class="phase-number">2</div>
+                    <div class="phase-title">
+                        <h3>Automate</h3>
+                        <p>Systems that work while you sleep</p>
+                    </div>
+                </div>
+                <div class="automation-flow">
+                    <h4><i class="fas fa-project-diagram"></i> The Automated Customer Journey</h4>
+                    <ol>
+                        <li><strong>Lead Magnet:</strong> Free resource → Email signup</li>
+                        <li><strong>Welcome Sequence:</strong> 3 emails over 5 days → First product offer</li>
+                        <li><strong>Post-Purchase:</strong> Thank you + complementary offer</li>
+                        <li><strong>Nurture Sequence:</strong> Weekly value emails → Premium offer</li>
+                    </ol>
+                </div>
+                <p><strong>Tools to Automate:</strong> ConvertKit (emails), Zapier (workflows), Gumroad Post-Purchase Offers</p>
+            </div>
+            
+            <div class="phase-container">
+                <div class="phase-header">
+                    <div class="phase-number">3</div>
+                    <div class="phase-title">
+                        <h3>Delegate</h3>
+                        <p>Multiply your output through others</p>
+                    </div>
+                </div>
+                <ul class="checklist">
+                    <li><strong>Virtual Assistant:</strong> $5-15/hr for admin tasks</li>
+                    <li><strong>Freelancers:</strong> Designers, editors, video producers</li>
+                    <li><strong>Automation First:</strong> Only delegate what can't be automated</li>
+                    <li><strong>Gumroad Affiliates:</strong> 10-30% commission for promoters</li>
+                </ul>
+            </div>
+            
+            <div class="phase-container">
+                <div class="phase-header">
+                    <div class="phase-number">4</div>
+                    <div class="phase-title">
+                        <h3>Premiumize</h3>
+                        <p>Serve your best customers</p>
+                    </div>
+                </div>
+                <div class="revenue-pyramid">
+                    <div class="pyramid-tier">$2,000+ Coaching</div>
+                    <div class="pyramid-tier">$497 Mastermind</div>
+                    <div class="pyramid-tier">$197 Course</div>
+                    <div class="pyramid-tier">$29 Ebook</div>
+                </div>
+                <p><strong>Premium Offer Examples:</strong></p>
+                <ul>
+                    <li>1:1 consulting sessions ($500-2000)</li>
+                    <li>Group coaching program ($997/year)</li>
+                    <li>Mastermind community ($97/month)</li>
+                    <li>Done-for-you services</li>
+                </ul>
+            </div>
+            
+            <div class="checklist">
+                <h3>Scaling Readiness Checklist:</h3>
+                <ul>
+                    <li>Do you have at least 3 products generating consistent sales?</li>
+                    <li>Have you automated your email sequences?</li>
+                    <li>Are you spending more than 50% of time on $10/hr tasks?</li>
+                    <li>Do you have customers who would pay 5-10x your current prices?</li>
+                    <li>Is your Gumroad audience growing organically?</li>
+                </ul>
+            </div>
+            
+            <blockquote style="border-color: #ff7e5f;">
+                "Scaling isn't about working harder—it's about creating systems where your knowledge works for you 24/7."
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page9.html" class="nav-button prev-button">← Customer Retention</a>
+            <a href="page11.html" class="nav-button next-button">Next: Analytics & Optimization →</a>
+        </footer>
+    </div>
+</body>
+</html>
