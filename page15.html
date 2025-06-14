@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Repurposing - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 15 Specific Styles */
+        .repurposing-flow {
+            position: relative;
+            padding: 30px 0;
+            margin: 40px 0;
+        }
+        .content-origin {
+            width: 200px;
+            height: 200px;
+            background: #6e45e2;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin: 0 auto;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 10px 30px rgba(110,69,226,0.3);
+            position: relative;
+            z-index: 2;
+        }
+        .repurposing-arrow {
+            position: absolute;
+            top: 200px;
+            left: 50%;
+            width: 2px;
+            height: 100px;
+            background: #6e45e2;
+            transform: translateX(-50%);
+        }
+        .repurposing-arrow:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -8px;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 15px solid #6e45e2;
+        }
+        .output-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 120px;
+        }
+        .output-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+            border-top: 4px solid #88d3ce;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .output-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(110,69,226,0.1);
+        }
+        .output-card h4 {
+            margin-top: 0;
+            color: #6e45e2;
+            display: flex;
+            align-items: center;
+        }
+        .output-card h4 i {
+            margin-right: 10px;
+            color: #ff7e5f;
+        }
+        .output-card .platform {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: #f0f5ff;
+            color: #6e45e2;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .repurposing-example {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #ff7e5f;
+        }
+        .tool-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .tool-badge {
+            background: white;
+            border: 1px solid #e0e0ff;
+            border-radius: 20px;
+            padding: 5px 15px;
+            font-size: 0.8em;
+            display: flex;
+            align-items: center;
+        }
+        .tool-badge i {
+            margin-right: 5px;
+            color: #6e45e2;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 15 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>Content Repurposing: Maximize Your Creative Output</h2>
+            <p>Transform one piece of content into dozens of assets that drive traffic and sales.</p>
+            
+            <div class="stat-highlight" style="background:linear-gradient(135deg, #6e45e2 0%, #ff7e5f 100%);">
+                <h3>Repurposed Content Generates 5-10X More Traffic Than Single-Use Content</h3>
+                <p>Top creators reuse every piece of content across 8+ platforms.</p>
+            </div>
+            
+            <div class="repurposing-flow">
+                <div class="content-origin">
+                    Core Content
+                    <br>(Course/Ebook/Video)
+                </div>
+                <div class="repurposing-arrow"></div>
+                <div class="output-grid">
+                    <div class="output-card">
+                        <h4><i class="fas fa-blog"></i> Blog Posts</h4>
+                        <span class="platform">SEO Traffic</span>
+                        <p>Break chapters into individual posts with Gumroad CTAs</p>
+                        <div class="tool-badges">
+                            <div class="tool-badge"><i class="fab fa-wordpress"></i> WordPress</div>
+                            <div class="tool-badge"><i class="fas fa-edit"></i> Grammarly</div>
+                        </div>
+                    </div>
+                    <div class="output-card">
+                        <h4><i class="fab fa-twitter"></i> Twitter Threads</h4>
+                        <span class="platform">Viral Potential</span>
+                        <p>Convert key lessons into engaging threaded narratives</p>
+                        <div class="tool-badges">
+                            <div class="tool-badge"><i class="fas fa-hashtag"></i> Typefully</div>
+                        </div>
+                    </div>
+                    <div class="output-card">
+                        <h4><i class="fab fa-youtube"></i> YouTube Videos</h4>
+                        <span class="platform">Long-Term Value</span>
+                        <p>Record yourself teaching sections with Gumroad links</p>
+                        <div class="tool-badges">
+                            <div class="tool-badge"><i class="fas fa-video"></i> Riverside</div>
+                        </div>
+                    </div>
+                    <div class="output-card">
+                        <h4><i class="fas fa-envelope"></i> Email Series</h4>
+                        <span class="platform">High Conversion</span>
+                        <p>Create 5-part course teaser for your newsletter</p>
+                        <div class="tool-badges">
+                            <div class="tool-badge"><i class="fas fa-mail-bulk"></i> ConvertKit</div>
+                        </div>
+                    </div>
+                    <div class="output-card">
+                        <h4><i class="fab fa-instagram"></i> Instagram Carousels</h4>
+                        <span class="platform">Visual Engagement</span>
+                        <p>Design slide decks of key concepts with CTA stickers</p>
+                        <div class="tool-badges">
+                            <div class="tool-badge"><i class="fas fa-palette"></i> Canva</div>
+                        </div>
+                    </div>
+                    <div class="output-card">
+                        <h4><i class="fas fa-microphone"></i> Podcast Episodes</h4>
+                        <span class="platform">Authority Building</span>
+                        <p>Discuss concepts in interview format with Gumroad mentions</p>
+                        <div class="tool-badges">
+                            <div class="tool-badge"><i class="fas fa-podcast"></i> Anchor</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="repurposing-example">
+                <h3><i class="fas fa-lightbulb"></i> Real-World Repurposing Example</h3>
+                <p><strong>Original Content:</strong> 60-minute course module on "Writing High-Converting Headlines"</p>
+                <p><strong>Repurposed Into:</strong></p>
+                <ul>
+                    <li>3 blog posts (one for each headline formula)</li>
+                    <li>Twitter thread comparing the formulas (2,500+ impressions)</li>
+                    <li>YouTube Shorts demonstrating each formula</li>
+                    <li>Email sequence with headline templates</li>
+                    <li>Instagram carousel with before/after examples</li>
+                    <li>Freebie lead magnet (Headline Cheatsheet PDF)</li>
+                </ul>
+            </div>
+            
+            <h3>Repurposing Workflow Tools</h3>
+            <div class="feature-grid" style="margin-bottom:30px;">
+                <div class="feature-badge">
+                    <i class="fas fa-sync-alt"></i>
+                    <h4>Notion</h4>
+                    <p>Central content repository</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-headphones"></i>
+                    <h4>Descript</h4>
+                    <p>Video to text transcription</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-copy"></i>
+                    <h4>Canva</h4>
+                    <p>Multi-format design</p>
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-robot"></i>
+                    <h4>ChatGPT</h4>
+                    <p>Content reformatting</p>
+                </div>
+            </div>
+            
+            <div class="checklist">
+                <h3>Repurposing Checklist:</h3>
+                <ul>
+                    <li>Have you broken down your core product into micro-content?</li>
+                    <li>Are you repurposing across at least 3 platforms?</li>
+                    <li>Do all repurposed pieces link back to your Gumroad?</li>
+                    <li>Have you created lead magnets from content snippets?</li>
+                    <li>Are you batch-creating repurposed content?</li>
+                </ul>
+            </div>
+            
+            <blockquote style="border-color: #88d3ce;">
+                "Don't create more content—create more from your content. A single course can fuel months of marketing."
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page14.html" class="nav-button prev-button">← Gumroad Features</a>
+            <a href="page16.html" class="nav-button next-button">Next: Launch Strategies →</a>
+        </footer>
+    </div>
+</body>
+</html>
