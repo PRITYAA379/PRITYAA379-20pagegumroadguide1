@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Stacking - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 13 Specific Styles */
+        .stack-visual {
+            width: 100%;
+            margin: 40px 0;
+            position: relative;
+            min-height: 400px;
+        }
+        .product-tier {
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.5s ease;
+        }
+        .product-tier:hover {
+            transform: scale(1.02);
+            box-shadow: 0 15px 40px rgba(110,69,226,0.2);
+        }
+        .product-tier h3 {
+            margin-top: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .product-tier .price {
+            background: #6e45e2;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+        }
+        .product-tier.featured {
+            z-index: 2;
+            border: 2px solid #ff7e5f;
+        }
+        .product-tier.featured:before {
+            content: "MOST POPULAR";
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            background: #ff7e5f;
+            color: white;
+            padding: 3px 15px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        #tier1 {
+            top: 0;
+            z-index: 1;
+        }
+        #tier2 {
+            top: 80px;
+            z-index: 2;
+        }
+        #tier3 {
+            top: 160px;
+            z-index: 3;
+        }
+        #tier4 {
+            top: 240px;
+            z-index: 4;
+        }
+        .stack-strategy {
+            background: #f8f9ff;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #88d3ce;
+        }
+        .strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        .strategy-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .strategy-card h4 {
+            margin-top: 0;
+            color: #6e45e2;
+        }
+        .value-pyramid {
+            width: 100%;
+            text-align: center;
+            margin: 30px 0;
+        }
+        .value-level {
+            display: inline-block;
+            padding: 15px;
+            margin: 5px 0;
+            color: white;
+            font-weight: bold;
+            width: 60%;
+        }
+        .value-level:nth-child(1) {
+            background: #6e45e2;
+            width: 40%;
+            border-radius: 8px 8px 0 0;
+        }
+        .value-level:nth-child(2) {
+            background: #8a63e8;
+            width: 60%;
+        }
+        .value-level:nth-child(3) {
+            background: #a881ef;
+            width: 80%;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 13 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>Product Stacking: Creating Irresistible Offers</h2>
+            <p>Design product suites that guide customers up your value ladder while maximizing revenue.</p>
+            
+            <div class="stat-highlight" style="background:linear-gradient(135deg, #6e45e2 0%, #ff7e5f 100%);">
+                <h3>Stacked Products Generate 3-5X More Revenue Than Standalone Offers</h3>
+                <p>Customers who buy bundles have 27% higher lifetime value.</p>
+            </div>
+            
+            <h3>The Complete Product Stack</h3>
+            <div class="stack-visual">
+                <div class="product-tier featured" id="tier2">
+                    <h3>Signature Course <span class="price">$297</span></h3>
+                    <ul>
+                        <li>Core video curriculum (6 modules)</li>
+                        <li>Actionable worksheets</li>
+                        <li>Community access</li>
+                        <li>Monthly Q&A calls</li>
+                    </ul>
+                </div>
+                <div class="product-tier" id="tier3">
+                    <h3>Mastermind Bundle <span class="price">$997</span></h3>
+                    <ul>
+                        <li>Everything in Signature Course</li>
+                        <li>Bi-weekly group coaching</li>
+                        <li>Private 1:1 session</li>
+                        <li>Accountability partner matching</li>
+                    </ul>
+                </div>
+                <div class="product-tier" id="tier1">
+                    <h3>Essential Guide <span class="price">$97</span></h3>
+                    <ul>
+                        <li>Foundational ebook</li>
+                        <li>Basic templates</li>
+                        <li>Email support</li>
+                    </ul>
+                </div>
+                <div class="product-tier" id="tier4">
+                    <h3>Elite Coaching <span class="price">$2,500</span></h3>
+                    <ul>
+                        <li>Everything in Mastermind</li>
+                        <li>Weekly private coaching</li>
+                        <li>Customized roadmap</li>
+                        <li>Priority support</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stack-strategy">
+                <h3>The Value Stacking Method</h3>
+                <div class="value-pyramid">
+                    <div class="value-level">Entry Point ($27-97)</div>
+                    <div class="value-level">Core Offer ($197-497)</div>
+                    <div class="value-level">Premium Experience ($997+)</div>
+                </div>
+                <p><strong>How it works:</strong> Customers start with your entry product, experience great results, then naturally progress to higher-ticket offers where you deliver exponentially more value.</p>
+            </div>
+            
+            <h3>5 Powerful Stacking Strategies</h3>
+            <div class="strategy-grid">
+                <div class="strategy-card">
+                    <h4>The Tripwire</h4>
+                    <p>A low-cost ($7-27) entry product that converts cold audiences into buyers. Example: "The 5-Page SEO Blueprint"</p>
+                </div>
+                <div class="strategy-card">
+                    <h4>The Bundle</h4>
+                    <p>Combine 3+ products at a "3 for 2" discount. Increases average order value by 30-50%.</p>
+                </div>
+                <div class="strategy-card">
+                    <h4>The Continuity</h4>
+                    <p>Monthly membership with recurring revenue. Example: "$97/month Template Club"</p>
+                </div>
+                <div class="strategy-card">
+                    <h4>The Done-For-You</h4>
+                    <p>Premium service add-on. Example: "$500 Custom Implementation Audit"</p>
+                </div>
+                <div class="strategy-card">
+                    <h4>The Certification</h4>
+                    <p>Higher-priced program with credential. Example: "$1,497 Certified Specialist Program"</p>
+                </div>
+            </div>
+            
+            <div class="checklist">
+                <h3>Product Stacking Checklist:</h3>
+                <ul>
+                    <li>Do you have products at 3+ price points?</li>
+                    <li>Have you created natural upgrade paths?</li>
+                    <li>Are you using Gumroad's bundle feature?</li>
+                    <li>Do you offer both DIY and done-for-you options?</li>
+                    <li>Have you tested post-purchase upsells?</li>
+                </ul>
+            </div>
+            
+            <div class="gumroad-hacks">
+                <h3><i class="fas fa-lightbulb"></i> Gumroad Stacking Hacks</h3>
+                <ul>
+                    <li><strong>Use the "Post-Purchase Offer" feature</strong> to automatically suggest relevant upsells</li>
+                    <li><strong>Create limited-time bundle discounts</strong> to create urgency</li>
+                    <li><strong>Link products in descriptions</strong> to guide customers to related offers</li>
+                    <li><strong>Offer payment plans</strong> for higher-ticket items ($500+)</li>
+                </ul>
+            </div>
+            
+            <blockquote style="border-color: #6e45e2;">
+                "Don't sell products—sell transformations. Stack your offers to guide customers through their entire journey."
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page12.html" class="nav-button prev-button">← Community Building</a>
+            <a href="page14.html" class="nav-button next-button">Next: Gumroad Feature Deep Dive →</a>
+        </footer>
+    </div>
+</body>
+</html>
