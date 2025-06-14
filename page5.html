@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Strategies - Gumroad Guide</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Page 5 Specific Styles */
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .pricing-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 5px solid #6e45e2;
+            transition: transform 0.3s ease;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+        }
+        .pricing-header {
+            padding: 20px;
+            text-align: center;
+            background: #f8f9ff;
+        }
+        .price {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #6e45e2;
+            margin: 10px 0;
+        }
+        .price small {
+            font-size: 0.5em;
+            color: #777;
+        }
+        .pricing-body {
+            padding: 20px;
+        }
+        .pricing-body ul {
+            padding-left: 20px;
+        }
+        .pricing-body li {
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .pricing-body li:before {
+            content: "•";
+            color: #6e45e2;
+            font-weight: bold;
+            position: absolute;
+            left: -15px;
+        }
+        .best-value {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ff7e5f;
+            color: white;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+        .price-comparison {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+        }
+        .price-comparison th {
+            background: #6e45e2;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        .price-comparison td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+        .price-comparison tr:nth-child(even) {
+            background: #f9f9f9;
+        }
+        .psych-badge {
+            display: inline-block;
+            background: #e0e0ff;
+            color: #6e45e2;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            margin-right: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="guide-container">
+        <header>
+            <h1>Gumroad Creator's Success Guide</h1>
+            <p class="page-indicator">Page 5 of 20</p>
+        </header>
+        
+        <main class="content">
+            <h2>Pricing Strategies That Maximize Revenue</h2>
+            <p>Set prices that attract buyers while maximizing your profit. Here's what works on Gumroad.</p>
+            
+            <h3>Gumroad Pricing Tiers</h3>
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h4>Basic</h4>
+                        <div class="price">$19-49</div>
+                        <p>Essential offering</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>Core product only</li>
+                            <li>PDF/Video files</li>
+                            <li>Basic support</li>
+                            <li>Good for impulse buys</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pricing-card" style="border-top-color:#ff7e5f;">
+                    <div class="best-value">Most Popular</div>
+                    <div class="pricing-header">
+                        <h4>Standard</h4>
+                        <div class="price">$49-97</div>
+                        <p>Best value</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>Core + bonuses</li>
+                            <li>Worksheets/templates</li>
+                            <li>Community access</li>
+                            <li>Email support</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pricing-card" style="border-top-color:#88d3ce;">
+                    <div class="pricing-header">
+                        <h4>Premium</h4>
+                        <div class="price">$97-197+</div>
+                        <p>Complete package</p>
+                    </div>
+                    <div class="pricing-body">
+                        <ul>
+                            <li>Everything in Standard</li>
+                            <li>1-on-1 consultation</li>
+                            <li>Custom solutions</li>
+                            <li>Priority support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <h3>Psychological Pricing Tactics</h3>
+            <table class="price-comparison">
+                <tr>
+                    <th>Tactic</th>
+                    <th>Example</th>
+                    <th>Effect</th>
+                </tr>
+                <tr>
+                    <td><span class="psych-badge">Charm Pricing</span></td>
+                    <td>$97 instead of $100</td>
+                    <td>Perceived as significantly cheaper</td>
+                </tr>
+                <tr>
+                    <td><span class="psych-badge">Price Anchoring</span></td>
+                    <td>Show $197 crossed out → $97</td>
+                    <td>Creates perception of value</td>
+                </tr>
+                <tr>
+                    <td><span class="psych-badge">Tiered Pricing</span></td>
+                    <td>Basic/Standard/Premium</td>
+                    <td>Makes middle option appealing</td>
+                </tr>
+                <tr>
+                    <td><span class="psych-badge">Pay What You Want</span></td>
+                    <td>Minimum $19, average $47</td>
+                    <td>Good for building audience</td>
+                </tr>
+            </table>
+            
+            <div class="checklist" style="margin-top:30px;">
+                <h3>Gumroad-Specific Pricing Tips:</h3>
+                <ul>
+                    <li>Test different price points (Gumroad makes this easy)</li>
+                    <li>Offer time-limited discounts to create urgency</li>
+                    <li>Consider "Pay What You Want" for new products</li>
+                    <li>Add payment plans for higher-priced items ($97+)</li>
+                    <li>Bundle products once you have multiple offerings</li>
+                </ul>
+            </div>
+            
+            <blockquote style="border-color: #ff7e5f;">
+                "Price based on value delivered, not time invested. A $29 product that solves a $1,000 problem is a bargain."
+            </blockquote>
+        </main>
+        
+        <footer class="navigation">
+            <a href="page4.html" class="nav-button prev-button">← Product Creation</a>
+            <a href="page6.html" class="nav-button next-button">Next: Sales Page Design →</a>
+        </footer>
+    </div>
+</body>
+</html>
