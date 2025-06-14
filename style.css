@@ -1,0 +1,73 @@
+/* ===== DARK THEME RESET ===== */
+:root {
+  --dark-bg: #121212;
+  --dark-card: #1e1e1e;
+  --dark-text: #e0e0e0;
+  --primary: #6e45e2;
+  --accent: #88d3ce;
+  --border: #333;
+}
+
+body {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+}
+
+/* ===== GLOBAL COMPONENTS ===== */
+/* Container */
+.guide-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--dark-card);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* Headers */
+h1, h2, h3, h4 {
+  color: white;
+  margin-top: 0;
+}
+
+/* Cards */
+.authority-card, 
+.proof-card, 
+.feature-card, 
+.timeline-content {
+  background: var(--dark-card);
+  border: 1px solid var(--border);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Buttons */
+.nav-button,
+.start-button {
+  background: var(--primary);
+  color: white;
+  border: none;
+}
+
+/* ===== PAGE-SPECIFIC OVERRIDES ===== */
+/* Page 19 - Authority Pyramid */
+.authority-level {
+  border: 1px solid var(--border) !important;
+}
+
+/* Page 20 - Timeline */
+.timeline::after {
+  background: var(--primary) !important;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-accent {
+  color: var(--accent);
+}
+
+.bg-primary {
+  background: var(--primary);
+}
